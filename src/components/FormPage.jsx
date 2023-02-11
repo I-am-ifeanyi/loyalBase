@@ -5,8 +5,11 @@ import line from "../Assets/line.png";
 
 
 const FormPage = () => {
+   const style = {
+     backgroundImage: `url("landingBg2.png")`,
+   };
   return (
-    <div className=' bg-[url("landingBg2.png")] h-screen md:bg-no-repeat md:bg-cover bg-contain text-gray-200' id='formPage'>
+    <div className='h-screen md:bg-no-repeat md:bg-cover bg-contain text-gray-200' id='formPage' style={style}>
       <div className=" flex gap-10 md:gap-0 flex-col md:flex-row items-center justify-between px-10 md:pt-20 ">
         <div className="md:w-[50%] flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold md:mt-10">What We Do</h1>

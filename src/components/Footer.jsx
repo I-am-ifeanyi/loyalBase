@@ -4,8 +4,11 @@ import callcalling from "../Assets/callcalling.png";
 import house2 from "../Assets/house2.png";
 
 const Footer = () => {
+    const style = {
+      backgroundImage: `url("landingBg2.png")`,
+    };
     return (
-      <div className='bg-[url("landingBg2.png")] px-10 pt-10' id=''>
+      <div className='px-10 pt-10' id='' style={style}>
         <div className="text-sm text-gray-200 flex flex-col gap-5 md:flex-row md:items-center justify-between  py-5 border-t">
           <div className="flex items-center gap-2">
             <img src={house2} alt="" />

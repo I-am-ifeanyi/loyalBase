@@ -38,10 +38,12 @@ const Landing = () => {
 const toggle = () => {
   setIsFormSubmitted(isFormSubmitted ? false : null)
 }
-
+ const style = {
+   backgroundImage: `url("landingBg1.png")`,
+ };
 
   return (
-    <div className=' bg-[url("landingBg1.png")] h-screen md:bg-no-repeat md:bg-cover bg-contain text-gray-200' onClick={toggle}>
+    <div className='h-screen md:bg-no-repeat md:bg-cover bg-contain text-gray-200' onClick={toggle} style={style}>
       <header className="flex tracking-wider justify-between md:p-10 py-5 px-3">
         <h1 className="flex items-center md:text-3xl text-2xl">
           <span className="text-4xl"> l</span>
